@@ -1,7 +1,7 @@
 <div class="container locations">
     <div class="row">
         <div class="col-md-6">
-            <h3>{{ trans('themes::location.title.offices') }}</h3>
+            <h3 class="fs-sm-11">{{ trans('themes::location.title.offices') }}</h3>
         </div>
         <div class="col-md-6">
             <div class="office-grid-navigation"> <a class="prev"><i class="fa fa-angle-left"></i></a> <a class="next"><i class="fa fa-angle-right"></i></a></div>
@@ -12,7 +12,7 @@
             <div class="item">
                 <div class="office-item">
                     <div class="office-title">
-                        <h3>{{ $location->name }}</h3>
+                        <h3 class="fs-sm-11">{{ $location->name }}</h3>
                     </div>
                     <div class="office-desc">
                         <div class="d-flex no-block">
@@ -25,7 +25,7 @@
                             <div class="d-flex no-block">
                                 <div class="font-20 m-t-5 m-r-20 align-self-top"><i class="icon-Phone-2"></i></div>
                                 <div class="info">
-                                    <span class="font-medium text-themecolor db m-t-5">{{ $location->phone1 }}</span>
+                                    <span class="font-medium db m-t-5">{{ $location->phone1 }}</span>
                                 </div>
                             </div>
                         @endif
@@ -33,7 +33,7 @@
                             <div class="d-flex no-block">
                                 <div class="font-20 m-t-5 m-r-20 align-self-top"><i class="icon-Fax"></i></div>
                                 <div class="info">
-                                    <span class="font-medium text-themecolor db m-t-5">{{ $location->fax }}</span>
+                                    <span class="font-medium db m-t-5">{{ $location->fax }}</span>
                                 </div>
                             </div>
                         @endif

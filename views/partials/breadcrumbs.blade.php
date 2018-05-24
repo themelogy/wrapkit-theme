@@ -1,6 +1,6 @@
 @if ($breadcrumbs)
     <ol>
-        <li><a href="{{ route('homepage') }}"><i class="fa fa-home font-10"></i></a></li>
+        <li><a href="{{ route('homepage') }}"><img src="{{ Theme::url('images/logo/netgd-icon.svg') }}" height="15" alt="{{ setting('theme::company-name') }}" /></a></li>
         @foreach ($breadcrumbs as $crumb)
             <?php
             $icon = isset($crumb->icon) ? '<i class="' . $crumb->icon . '"></i> ' : '';

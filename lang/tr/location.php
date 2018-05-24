@@ -2,6 +2,6 @@
 
 return [
   'title' => [
-      'offices' => 'GENEL MÜDÜRLÜK VE ŞUBELER İLETİŞİM BİLGİLERİ'
+      'offices' => 'BÖLGE MÜDÜRLÜKLERİ İLETİŞİM BİLGİLERİ'
   ]
 ];
