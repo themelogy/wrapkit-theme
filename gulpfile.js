@@ -27,6 +27,7 @@ path = {
     "sass"        : "/sass",
     "video"       : "/videos",
     "image"       : "/images",
+    "fonts"       : "/fonts",
     "vendor"      : "/vendor",
     "maps"        : "../maps"
 };
@@ -63,6 +64,7 @@ resource.asset = {
     "video"     : resource.assets + path.video,
     "vendor"    : resource.assets + path.vendor,
     "sass"      : resource.assets + path.sass,
+    "fonts"     : resource.assets + path.fonts,
     "maps"      : path.maps
 };
 
@@ -82,7 +84,8 @@ let vendorCopy = {
         resource.extVendor+'/bootstrap-touch-slider/**',
         resource.extVendor+'/revolution/**',
         resource.vendor+'/fontIconPicker/**',
-        resource.vendor+'/lightbox2/dist/**'
+        resource.vendor+'/lightbox2/dist/**',
+        resource.vendor+'/font-awesome/web-fonts-with-css/webfonts/**'
     ],
     dest: [
         resource.asset.vendor+'/owl.carousel',
@@ -99,7 +102,8 @@ let vendorCopy = {
         resource.asset.vendor+'/bootstrap-touch-slider',
         resource.asset.vendor+'/revolution',
         resource.asset.vendor+'/fonticonpicker',
-        resource.asset.vendor+'/lightbox2'
+        resource.asset.vendor+'/lightbox2',
+        resource.asset.fonts+'/fontawesome'
     ]
 };
 
