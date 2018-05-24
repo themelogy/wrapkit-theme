@@ -1,0 +1,16 @@
+// Bordered & Pulled
+// -------------------------
+
+.#{$cr-css-prefix}-border {
+  border: solid .08em $cr-border-color;
+  border-radius: .1em;
+  padding: .2em .25em .15em;
+}
+
+.#{$cr-css-prefix}-pull-left { float: left; }
+.#{$cr-css-prefix}-pull-right { float: right; }
+
+.#{$cr-css-prefix} {
+  &.#{$cr-css-prefix}-pull-left { margin-right: .3em; }
+  &.#{$cr-css-prefix}-pull-right { margin-left: .3em; }
+}

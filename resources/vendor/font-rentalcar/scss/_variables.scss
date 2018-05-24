@@ -1,0 +1,48 @@
+$cr-font-path:                "../fonts/carrental" !default;
+$cr-font-size-base:           16px !default;
+$cr-css-prefix:               cr !default;
+$cr-version:                  "1.0.0" !default;
+$cr-border-color:             #eee !default;
+$cr-inverse:                  #fff !default;
+$cr-li-width:                 2em !default;
+
+// Convenience function used to set content property
+@function cr-content($cr-var) {
+  @return unquote("\"#{ $cr-var }\"");
+}
+
+$cr-var-fuel: \0066;
+$cr-var-gear: \0067;
+$cr-var-gear-auto: \0068;
+$cr-var-baby-seat: \0062;
+$cr-var-seat: \0063;
+$cr-var-door: \0064;
+$cr-var-door-four: \0065;
+$cr-var-door-two: \0069;
+$cr-var-person-drive: \0060;
+$cr-var-person-one: \0061;
+$cr-var-baggage: \006A;
+$cr-var-suitcase: \006B;
+$cr-var-freezer: \006C;
+$cr-var-air-condition: \006D;
+$cr-var-gear-automatic: \006E;
+
+
+$cr-var-fuel-s: \0048;
+$cr-var-gear-s: \0049;
+$cr-var-gear-auto-s: \004A;
+$cr-var-baby-seat-s: \0043;
+$cr-var-seat-s: \0044;
+$cr-var-door-s: \0045;
+$cr-var-door-four-s: \0047;
+$cr-var-door-two-s: \004B;
+$cr-var-person-drive-s: \0042;
+$cr-var-person-one-s: \0041;
+$cr-var-baggage-s: \004C;
+$cr-var-suitcase-s: \004D;
+$cr-var-freezer-s: \004E;
+$cr-var-air-condition-s: \004F;
+$cr-var-gear-automatic-s: \0050;
+
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap-select",
+  "homepage": "https://github.com/snapappointments/bootstrap-select",
+  "version": "1.13.0-beta",
+  "_release": "1.13.0-beta",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.13.0-beta",
+    "commit": "78857d12432fb5f5ff20ffbc78a9b107fc8b6d3d"
+  },
+  "_source": "https://github.com/snapappointments/bootstrap-select.git",
+  "_target": "1.13.0-beta",
+  "_originalSource": "bootstrap-select"
+}

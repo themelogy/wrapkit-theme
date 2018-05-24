@@ -1,0 +1,23 @@
+// Icon Sizes
+// -------------------------
+
+// makes the font 33% larger relative to the icon container
+.#{$cr-css-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -.0667em;
+}
+
+.#{$cr-css-prefix}-xs {
+  font-size: .75em;
+}
+
+.#{$cr-css-prefix}-sm {
+  font-size: .875em;
+}
+
+@for $i from 1 through 10 {
+  .#{$cr-css-prefix}-#{$i}x {
+    font-size: $i * 1em;
+  }
+}

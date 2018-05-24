@@ -1,0 +1,35 @@
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+
+.#{$cr-css-prefix}-fuel:before { content: cr-content($cr-var-fuel); }
+.#{$cr-css-prefix}-gear:before { content: cr-content($cr-var-gear); }
+.#{$cr-css-prefix}-gear-auto:before { content: cr-content($cr-var-gear-auto); }
+.#{$cr-css-prefix}-baby-seat:before { content: cr-content($cr-var-baby-seat); }
+.#{$cr-css-prefix}-seat:before { content: cr-content($cr-var-seat); }
+.#{$cr-css-prefix}-door:before { content: cr-content($cr-var-door); }
+.#{$cr-css-prefix}-door-four:before { content: cr-content($cr-var-door-four); }
+.#{$cr-css-prefix}-door-two:before { content: cr-content($cr-var-door-two); }
+.#{$cr-css-prefix}-person-drive:before { content: cr-content($cr-var-person-drive); }
+.#{$cr-css-prefix}-person-one:before { content: cr-content($cr-var-person-one); }
+.#{$cr-css-prefix}-baggage:before { content: cr-content($cr-var-baggage); }
+.#{$cr-css-prefix}-suitcase:before { content: cr-content($cr-var-suitcase); }
+.#{$cr-css-prefix}-freezer:before { content: cr-content($cr-var-freezer); }
+.#{$cr-css-prefix}-air-condition:before { content: cr-content($cr-var-air-condition); }
+.#{$cr-css-prefix}-gear-automatic:before { content: cr-content($cr-var-gear-automatic); }
+
+
+.#{$cr-css-prefix}-fuel-s:before { content: cr-content($cr-var-fuel-s); }
+.#{$cr-css-prefix}-gear-s:before { content: cr-content($cr-var-gear-s); }
+.#{$cr-css-prefix}-gear-auto-s:before { content: cr-content($cr-var-gear-auto-s); }
+.#{$cr-css-prefix}-baby-seat-s:before { content: cr-content($cr-var-baby-seat-s); }
+.#{$cr-css-prefix}-seat-s:before { content: cr-content($cr-var-seat-s); }
+.#{$cr-css-prefix}-door-s:before { content: cr-content($cr-var-door-s); }
+.#{$cr-css-prefix}-door-four-s:before { content: cr-content($cr-var-door-four-s); }
+.#{$cr-css-prefix}-door-two-s:before { content: cr-content($cr-var-door-two-s); }
+.#{$cr-css-prefix}-person-drive-s:before { content: cr-content($cr-var-person-drive-s); }
+.#{$cr-css-prefix}-person-one-s:before { content: cr-content($cr-var-person-one-s); }
+.#{$cr-css-prefix}-baggage-s:before { content: cr-content($cr-var-baggage-s); }
+.#{$cr-css-prefix}-suitcase-s:before { content: cr-content($cr-var-suitcase-s); }
+.#{$cr-css-prefix}-freezer-s:before { content: cr-content($cr-var-freezer-s); }
+.#{$cr-css-prefix}-air-condition-s:before { content: cr-content($cr-var-air-condition-s); }
+.#{$cr-css-prefix}-gear-automatic-s:before { content: cr-content($cr-var-gear-automatic-s); }

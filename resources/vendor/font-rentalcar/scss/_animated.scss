@@ -1,0 +1,20 @@
+// Animated Icons
+// --------------------------
+
+.#{$cr-css-prefix}-spin {
+  animation: cr-spin 2s infinite linear;
+}
+
+.#{$cr-css-prefix}-pulse {
+  animation: cr-spin 1s infinite steps(8);
+}
+
+@keyframes cr-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

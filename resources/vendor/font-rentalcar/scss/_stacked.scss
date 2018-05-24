@@ -1,0 +1,31 @@
+// Stacked Icons
+// -------------------------
+
+.#{$cr-css-prefix}-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2em;
+}
+
+.#{$cr-css-prefix}-stack-1x,
+.#{$cr-css-prefix}-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.#{$cr-css-prefix}-stack-1x {
+  line-height: inherit;
+}
+
+.#{$cr-css-prefix}-stack-2x {
+  font-size: 2em;
+}
+
+.#{$cr-css-prefix}-inverse {
+  color: $cr-inverse;
+}

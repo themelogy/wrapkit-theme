@@ -1,0 +1,18 @@
+// List Icons
+// -------------------------
+
+.#{$cr-css-prefix}-ul {
+  list-style-type: none;
+  margin-left: $cr-li-width * 5/4;
+  padding-left: 0;
+
+  > li { position: relative; }
+}
+
+.#{$cr-css-prefix}-li {
+  left: -$cr-li-width;
+  position: absolute;
+  text-align: center;
+  width: $cr-li-width;
+  line-height: inherit;
+}

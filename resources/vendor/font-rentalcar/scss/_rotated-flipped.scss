@@ -1,0 +1,23 @@
+// Rotated & Flipped Icons
+// -------------------------
+
+.#{$cr-css-prefix}-rotate-90  { @include cr-icon-rotate(90deg, 1);  }
+.#{$cr-css-prefix}-rotate-180 { @include cr-icon-rotate(180deg, 2); }
+.#{$cr-css-prefix}-rotate-270 { @include cr-icon-rotate(270deg, 3); }
+
+.#{$cr-css-prefix}-flip-horizontal { @include cr-icon-flip(-1, 1, 0); }
+.#{$cr-css-prefix}-flip-vertical   { @include cr-icon-flip(1, -1, 2); }
+.#{$cr-css-prefix}-flip-horizontal.#{$cr-css-prefix}-flip-vertical { @include cr-icon-flip(-1, -1, 2); }
+
+// Hook for IE8-9
+// -------------------------
+
+:root {
+  .#{$cr-css-prefix}-rotate-90,
+  .#{$cr-css-prefix}-rotate-180,
+  .#{$cr-css-prefix}-rotate-270,
+  .#{$cr-css-prefix}-flip-horizontal,
+  .#{$cr-css-prefix}-flip-vertical {
+    filter: none;
+  }
+}

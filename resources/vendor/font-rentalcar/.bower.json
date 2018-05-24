@@ -1,0 +1,27 @@
+{
+  "name": "font-rentalcar",
+  "authors": [
+    "themelogy <ismailsagsoz@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/themelogy/font-rentalcar",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendor",
+    "test",
+    "tests"
+  ],
+  "_release": "c5c6a9d30d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c5c6a9d30d1751565406fb66563d1c15507c5877"
+  },
+  "_source": "https://github.com/themelogy/font-rentalcar.git",
+  "_target": "*",
+  "_originalSource": "font-rentalcar"
+}
