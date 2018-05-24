@@ -1,0 +1,53 @@
+/* clear any floats inside the mega menus */
+
+#main-menu .mega-menu > li {
+  overflow: auto;
+}
+
+/* reset mega menu list/link styles (which are inherited from the SmartMenus core/theme styles) */
+
+#main-menu .mega-menu {
+  color: #353451;
+}
+
+#main-menu .mega-menu ul {
+  position: static;
+  display: block;
+  margin: 0.83em 0;
+  border: 0;
+  padding: 0 0 0 20px;
+  width: auto;
+  background: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#main-menu .mega-menu ul li {
+  display: list-item;
+  list-style-type: disc;
+  border: 0;
+}
+
+#main-menu .mega-menu a {
+  display: inline;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+/* simple columns inside the mega menus */
+
+#main-menu .mega-menu .column-1-3 {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  #main-menu .mega-menu .column-1-3 {
+    float: left;
+    width: 33.33%;
+  }
+}

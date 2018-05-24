@@ -1,0 +1,152 @@
+/*******************
+Header 6
+*******************/
+.header6{
+  .navbar-toggler{
+    color:$white;
+  }
+  .navbar-brand{
+    line-height: 80px;
+  }
+}
+.h6-nav-bar{
+  padding:0;
+  .navbar-nav{
+    .nav-link{
+      padding: 35px 15px;
+      color:rgba(255, 255, 255, 0.5);
+    }
+    .nav-item:hover .nav-link, .nav-item.active .nav-link{
+      color:rgba(255, 255, 255, 1);
+    }
+  }
+  .act-buttons{
+    .btn{
+      margin: 10px 0 10px 10px;
+    }
+  }
+}
+
+@media(max-width:1023px) {
+  .h6-nav-bar{
+    .navbar-nav{
+      .nav-link{
+        padding: 15px 15px;
+      }
+    }
+    .act-buttons{
+      .btn{
+        margin: 10px 0 10px 0;
+      }
+    }
+  }
+}
+
+
+/*******************
+Header 6
+*******************/
+.h6-topbar{
+  .authentication-box{
+    margin-bottom:0;
+    padding:10px 0;
+    li{
+      display: inline-block;
+      a{
+        padding: 3px 15px;
+        display: block;
+        color:$muted;
+        font-weight: 400;
+        border-bottom:0 !important;
+        &:hover{
+          color:$info;
+        }
+        &:last-child{
+          padding-right:0;
+        }
+      }
+      i{
+        font-size:20px;
+        vertical-align: text-bottom;
+      }
+
+    }
+  }
+}
+.h6-nav-bar{
+  padding:0;
+  .navbar-nav{
+    .nav-link{
+      padding: 35px 15px;
+      color:$muted;
+    }
+    .nav-item:hover .nav-link, .nav-item.active .nav-link{
+      color:$dark;
+    }
+  }
+  .act-buttons{
+    .btn{
+      margin: 10px 0 10px 10px;
+    }
+  }
+}
+
+@media(max-width:1023px) {
+  .h6-nav-bar{
+    .navbar-nav{
+      .nav-link{
+        padding: 15px 15px;
+      }
+    }
+    .act-buttons{
+      .btn{
+        margin: 10px 0 10px0;
+      }
+    }
+  }
+}
+
+
+/*******************
+Header 6
+*******************/
+.header6{
+  .navbar-toggler{
+    color:$white;
+  }
+  .navbar-brand{
+    line-height: 80px;
+  }
+}
+.h6-nav-bar{
+  padding:0;
+  .navbar-nav{
+    .nav-link{
+      padding: 35px 15px;
+      color:rgba(255, 255, 255, 0.5);
+    }
+    .nav-item:hover .nav-link, .nav-item.active .nav-link{
+      color:rgba(255, 255, 255, 1);
+    }
+  }
+  .act-buttons{
+    .btn{
+      margin: 10px 0 10px 10px;
+    }
+  }
+}
+
+@media(max-width:1023px) {
+  .h6-nav-bar{
+    .navbar-nav{
+      .nav-link{
+        padding: 15px 15px;
+      }
+    }
+    .act-buttons{
+      .btn{
+        margin: 10px 0 10px0;
+      }
+    }
+  }
+}

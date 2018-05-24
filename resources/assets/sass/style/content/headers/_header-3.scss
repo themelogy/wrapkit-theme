@@ -1,0 +1,113 @@
+
+
+/*******************
+Header 3
+*******************/
+
+.h3-topbar {
+  padding: 10px 0;
+  .list-inline {
+    margin-bottom:0;
+    li {
+      display: inline-block;
+      a {
+        padding: 10px 8px;
+        display: block;
+        color: $muted;
+        font-weight: 400;
+        font-size: 14px;
+        &:hover {
+          color: $dark;
+        }
+        .info-icon {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 8px;
+          font-size: 25px;
+        }
+        .vdevider {
+          width: 1px;
+          background: $border;
+          display: inline-block;
+          height: 25px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .t-r {
+    text-align: right;
+  }
+}
+.h3-navbar{
+  border-top:1px solid $border;
+  position: relative;
+  .navbar-brand{
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    width: 240px;
+    text-align: center;
+    background: $white;
+    box-shadow: $card-shadow;
+    padding: 30px 15px;
+    top:-67px;
+  }
+  .navbar{
+    padding:0;
+    margin-top: -1px;
+    .navbar-nav{
+      .nav-item{
+        margin: 0 10px;
+      }
+      .nav-link{
+        padding:22px 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 14px;
+        color:$muted;
+        border-top:1px solid transparent;
+      }
+      .nav-item.active .nav-link, .nav-item:hover .nav-link{
+        border-top:1px solid $danger;
+        color:$danger;
+      }
+    }
+  }
+}
+@media(max-width:1023px) {
+  .h3-topbar {
+    .t-r {
+      text-align: left;
+    }
+  }
+  .h3-navbar{
+    .navbar-brand{
+      position: relative;
+      top:0;
+      margin-right: auto;
+      box-shadow: none;
+      width: auto;
+      background: transparent;
+      padding: 10px 0;
+      margin-left:0;
+
+      .spare-text{
+        display: none;
+      }
+    }
+
+    .navbar .navbar-nav{
+      .nav-link{
+        border-top:0;
+        border-left:1px solid transparent;
+      }
+
+      .nav-item.active .nav-link, .nav-item:hover .nav-link{
+        border-top:0 solid $danger;
+        border-left:1px solid $danger;
+      }
+    }
+  }
+}

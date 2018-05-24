@@ -1,0 +1,67 @@
+/*font size in extra small devices*/
+@include media-breakpoint-up(sm) {
+  @for $i from 0 through 3 {
+    @for $d from 0 through 9 {
+      .fs-sm-#{$i}#{$d} {
+        font-size: unquote($i+(".")+$d+rem) !important;
+      }
+    }
+  }
+}
+
+
+.text-3d {
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+}
+
+/*******************
+font weight
+*******************/
+
+html body {
+  strong {
+    font-weight: 600;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .font-normal {
+    font-weight: normal;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .font-16 {
+    font-size: 16px;
+  }
+  .font-14 {
+    font-size: 14px;
+  }
+  .font-13 {
+    font-size: 13px;
+  }
+  .font-12 {
+    font-size: 12px;
+  }
+  .font-11 {
+    font-size: 11px;
+  }
+  .font-10 {
+    font-size: 10px;
+  }
+  .font-18 {
+    font-size: 18px;
+  }
+  .font-20 {
+    font-size: 20px;
+  }
+  .font-stylish {
+    font-family: "Calafia-Regular";
+  }
+}

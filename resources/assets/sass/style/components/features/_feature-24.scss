@@ -1,0 +1,42 @@
+.wrap-feature-24{
+  margin-top: 60px;
+  .card{
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    &:hover{
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+    }
+  }
+  .service-24{
+    text-align: center;
+    padding:40px 0;
+    display: block;
+
+    i{
+      background-color: $themecolor-dark;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color:transparent;
+      font-size:50px;
+    }
+    .ser-title{
+      margin: 10px 0 5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    &:hover, &:focus{
+      @include linear-gradient (45deg, $themecolor-dark 0%, $themecolor-alt 100%);
+      i, .ser-title{
+        color:$white;
+        text-fill-color:$white;
+        -webkit-text-fill-color:$white;
+      }
+      i{
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

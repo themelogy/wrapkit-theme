@@ -1,0 +1,121 @@
+/*******************
+Header 17
+*******************/
+.header17{
+  .h17-nav{
+    padding: 15px 0;
+    display: flex;
+    .call-info{
+      padding-left: 20px;
+      border-left: 1px solid $border;
+      vertical-align: middle;
+    }
+    .h17nav-bar{
+      margin-bottom:0;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        a.nav-link {
+          color:$muted;
+          padding: 10px 15px;
+          display: block;
+        }
+      }
+      &:hover .nav-link, &.active .nav-link{
+        color:$danger;
+      }
+      &:last-child{
+        margin-left: 10px;
+      }
+    }
+  }
+  .h17-main-nav{
+    position: fixed;
+    z-index: 999;
+    overflow: auto;
+    top:0;
+    padding: 60px 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    background: $inverse;
+    &.show{
+      display: flex;
+    }
+    .close-icons{
+      position: absolute;
+      right: 30px;
+      top:30px;
+      color:$muted;
+      &:hover{
+        color:$white;
+      }
+    }
+    ul{
+      margin:0;
+      padding:0;
+
+      li{
+        list-style: none;
+        a{
+          color:$muted;
+          &:hover{
+            color:$white;
+          }
+        }
+      }
+    }
+    .nav-menu{
+      display: inline-block;
+      li{
+        a{
+          font-size: 24px;
+          padding: 10px 0 7px;
+          margin-bottom: 5px;
+          display: block;
+          border-bottom: 2px solid transparent;
+        }
+        &:hover a, &.active a{
+          border-bottom: 2px solid $danger;
+          color:$white;
+        }
+        &:last-child a, &:last-child:hover a{
+          font-size:14px;
+          color:$white;
+          margin-top: 20px;
+          padding: 10px 25px;
+          border-bottom: 2px solid transparent;
+        }
+      }
+    }
+    .info-nav{
+      margin-top: 60px;
+      li{
+        display: inline-block;
+        a{
+          padding: 0 10px;
+        }
+      }
+    }
+    .social-nav{
+      li{
+        display: inline-block;
+        a{
+          padding:10px;
+          display: block;
+        }
+        &:last-child{
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+@media(max-width:599px) {
+  .h-17navbar{
+    align-self: auto!important;
+  }
+}

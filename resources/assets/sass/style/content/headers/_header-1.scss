@@ -1,0 +1,21 @@
+/*******************
+Header 1
+*******************/
+
+.h1-nav {
+  padding: 15px 0;
+  .navbar-nav .nav-item {
+    margin: 0 20px;
+    .nav-link {
+      padding: 12px0;
+      color: $muted;
+      font-weight: 400;
+      &:hover {
+        color: $success;
+      }
+    }
+    &:last-child {
+      margin-right:0;
+    }
+  }
+}

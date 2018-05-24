@@ -1,0 +1,109 @@
+
+/*******************
+Header 14
+*******************/
+.h14-topbar{
+  background: $light;
+  .navbar-brand{
+    font-size: 14px;
+    color:$dark;
+    font-weight: 500;
+    padding: 15px 0;
+  }
+  .navbar{
+    padding: 0;
+    .search-box{
+      padding: 15px;
+      width: 240px;
+    }
+    .nav-item .nav-link{
+      color:$muted;
+      padding: 15px 20px;
+      &:first-child{
+        padding-left:0;
+      }
+    }
+    .nav-item:hover .nav-link{
+
+    }
+  }
+}
+.h14-navbar {
+  background:$yellow;
+  .navbar{
+    padding: 0;
+    .hidden-lg-up{
+      padding:15px;
+      color:$dark;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    .navbar-nav{
+      .nav-link{
+        padding:18px 15px;
+        color:$dark;
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      .nav-item:hover .nav-link, .nav-item.active .nav-link{
+        background: $border;
+        color:$dark;
+      }
+      .search {
+        .nav-link{
+          background: $dark-transparent;
+          padding: 18px 23px;
+
+        }
+        .dropdown-menu{
+          padding: 20px;
+          min-width: 300px;
+        }
+      }
+    }
+    .dropdown-menu{
+      background:$yellow;
+      border-radius: 0 0 4px 4px;
+      margin-top:0;
+      .dropdown-item{
+        color:$dark;
+        &.active, &:active, &:hover{
+          background: $border;
+
+        }
+      }
+    }
+  }
+}
+.h14-info-bar{
+  padding: 15px0;
+  .donate-btn{
+    a{
+      font-size:13px;
+      font-weight: 500;
+      padding: 13px 25px;
+      margin-left: 15px;
+    }
+  }
+  .nav-item .nav-link{
+    display: flex;
+    padding: 0 25px;
+  }
+}
+
+@media(max-width:1023px) {
+  .h14-info-bar{
+    .donate-btn{
+      a{
+        display: block;
+        margin-left:0;
+      }
+    }
+    .nav-item .nav-link{
+      padding: 0 10px;
+      margin: 10px 0;
+    }
+  }
+}

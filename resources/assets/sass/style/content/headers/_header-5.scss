@@ -1,0 +1,58 @@
+/*******************
+Header 5
+*******************/
+.h5-nav-bar{
+  padding: 25px 15px;
+  position: relative;
+  width: 100%;
+  left:0;
+  .navbar-brand{
+    position: absolute;
+  }
+  .navbar-nav {
+    .nav-link{
+      color:$white;
+      font-size:14px;
+      padding: 25px 18px;
+      font-weight: 500;
+    }
+    .nav-item:hover .nav-link{
+      color:$danger;
+    }
+  }
+  .rounded-button{
+    border-radius: 60px;
+    padding: 10px 30px;
+    display: inline-block;
+    border:2px solid $danger;
+    position: absolute;
+    right:0;
+    color:rgba(255, 255, 255, 0.5);
+    font-size:14px;
+    a{
+      color:$white;
+      font-weight: 500;
+      &:hover{
+        color:$danger;
+      }
+    }
+  }
+}
+@media(max-width:1023px) {
+  .h5-nav-bar{
+    .navbar-brand{
+      position: relative;
+    }
+    .navbar-collapse {
+      background: $dark;
+      padding: 15px 15px 20px;
+      border-radius: $radius;
+      box-shadow: $card-shadow;
+      z-index: 10;
+    }
+    .rounded-button{
+      position: relative;
+
+    }
+  }
+}

@@ -1,0 +1,51 @@
+
+
+/*******************
+form 3
+*******************/
+
+#banner2 {
+  max-height: 800px;
+  .w-50 {
+    width: 50%;
+  }
+  .form-row {
+    margin: 0;
+  }
+  label.font-12 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  input[type=text] {
+    color: $bodytext;
+    font-weight: 300;
+    text-overflow: ellipsis;
+  }
+  button {
+    cursor: pointer;
+    border-radius: 0;
+  }
+  .date label {
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  #banner2 {
+    .left,
+    .right {
+      padding: 25px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #banner2 {
+    .left,
+    .right {
+      padding: 25px 15px;
+    }
+  }
+}

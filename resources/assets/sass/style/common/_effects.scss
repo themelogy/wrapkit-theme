@@ -1,0 +1,9 @@
+@for $i from 0 through 30 {
+  @for $o from 1 through 4 {
+    $s: $o * 5;
+    $o: $s / 100;
+    .z-depth-#{$s}-#{$i} {
+      @include box-shadow(0,0,$i+px,rgba(0,0,0,$o));
+    }
+  }
+}

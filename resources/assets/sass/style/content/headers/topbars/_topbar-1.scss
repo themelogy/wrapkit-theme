@@ -1,0 +1,33 @@
+/*******************
+Topbar
+*******************/
+.topbar {
+  padding:0;
+  transition: 0.2s ease-in;
+  width: 100%;
+  z-index: 20;
+  &.fixed-header {
+    box-shadow: $header-shadow;
+    transition: 0.2s ease-in;
+    background: $white;
+    position: fixed;
+    .navbar .navbar-brand img {
+      height: 50px;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    }
+    @media only screen and (max-width: 768px) {
+      .navbar .navbar-brand img {
+        height: 30px;
+      }
+    }
+  }
+  .language {
+    .flag-icon {
+      margin-right:5px;
+    }
+    .dropdown-menu {
+      padding: 0;
+    }
+  }
+}

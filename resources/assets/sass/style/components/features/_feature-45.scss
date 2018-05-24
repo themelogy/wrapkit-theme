@@ -1,0 +1,44 @@
+.wrap-feature45-box{
+  margin-top: 20px;
+  .f45-tab{
+    display: table;
+    width: 100%;
+    > a{
+      @include media-breakpoint-up(sm) {
+        display: table-cell;
+        &:first-child {
+          border-left: $feature45-link-border;
+          border-top-left-radius: $feature45-border-radius;
+        }
+        &:last-child {
+          border-top-right-radius: $feature45-border-radius;
+        }
+        border-right: $feature45-link-border;
+        border-top: $feature45-link-border;
+      }
+      @include media-breakpoint-down(xs) {
+        &:first-child {
+          border-top: $feature45-link-border;
+        }
+        border-bottom: $feature45-link-border !important;
+        border-left: $feature45-link-border;
+        border-right: $feature45-link-border;
+      }
+      text-align: center;
+      padding: 15px 10px;
+      background: $feature45-link-bg-color;
+      color: $feature45-link-color;
+      &.active{
+        border-bottom-color: transparent;
+        background: $feature45-active-link-bg-color;
+        color: $feature45-active-link-color;
+        font-weight: 400;
+        @include box-shadow(0,-5px,10px,rgba(0,0,0,0.05));
+      }
+    }
+
+  }
+  .tab-pane{
+    padding: 20px 0;
+  }
+}

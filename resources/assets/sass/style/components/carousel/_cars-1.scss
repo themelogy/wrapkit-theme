@@ -1,0 +1,38 @@
+.owl-cars {
+  .owl-item {
+    @include transition(all .5s);
+    &:hover {
+      @include box-shadow(0,0,20px,rgba(0,0,0,0.10));
+    }
+  }
+  .caption {
+    .title {
+      font-size: 1rem;
+      letter-spacing: -0.025em;
+      a {
+        color: $themecolor;
+      }
+    }
+    .price {
+      font-size: .85rem !important;
+    }
+    .features {
+      border-top: 1px solid darken(white, 10%);
+      div {
+        font-size: .80rem !important;
+        i {
+          font-size: 1rem;
+          color: $themecolor;
+        }
+      }
+    }
+    .buttons {
+      a {
+        border: 1px solid darken(white, 20%);
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

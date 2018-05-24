@@ -1,0 +1,37 @@
+.booking-form {
+  form {
+    padding: 10px 20px 20px;
+    background-color: rgba($themecolor, 1);
+  }
+  label {
+    color: $white;
+  }
+  &.theme-two {
+    .title {
+      padding: 10px 20px;
+      border-bottom: 1px solid darken($themecolor, 5%);
+      margin: 0;
+      background-color: darken($themecolor, 5%);
+      font-size: 1.25rem;
+    }
+  }
+  &.theme-one {
+    z-index: 10;
+    position: relative;
+    @include box-shadow(0,0,20px);
+    form {
+      padding: 10px 10px;
+      background-color: rgba($themecolor, 1);
+    }
+    .title {
+      padding: 10px 20px;
+      border-bottom: 1px solid darken($themecolor, 5%);
+      margin: 0;
+      background-color: rgba($themecolor, 0.75);
+      font-size: 1.25rem;
+      @media screen and (min-width: 768px) {
+        margin-top: -57px;
+      }
+    }
+  }
+}

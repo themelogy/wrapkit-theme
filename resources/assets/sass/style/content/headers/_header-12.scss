@@ -1,0 +1,96 @@
+@import "variables/colors";
+.header12{
+  background: $header-bg-color;
+  .h12-nav{
+    padding: 0 0;
+    .navbar-toggler {
+      padding: $nav-mobile-toggle-padding;
+      background-color: $nav-mobile-toggle-bg-color;
+      .ti-menu {
+        color: $nav-mobile-toggle-color;
+      }
+    }
+    .navbar-nav .nav-item > .nav-link{
+      line-height: 70px;
+    }
+    .navbar-nav .nav-item {
+      .nav-link {
+        color: $nav-link-color;
+        padding: 10px 15px;
+        display: block;
+        letter-spacing: -0.03em;
+        font-size: 0.95rem;
+      }
+      &:hover .nav-link, &.active .nav-link{
+        color: $nav-link-color;
+      }
+      &:last-child{
+        margin-left: 10px;
+      }
+    }
+  }
+  .h12-topbar{
+    border-bottom: 1px solid $topbar-border-color;
+    background-color: $topbar-bg-color;
+    .navbar-toggler .fa {
+      color: $nav-mobile-toggle-color;
+    }
+    .navbar-brand{
+      font-size: 14px;
+      color: $nav-brand-txt-color;
+      padding: 10px 0;
+    }
+    .navbar{
+      padding: 0;
+      .nav-item .nav-link{
+        color: $topbar-link-color;
+        //border-right:1px solid $border;
+        //&:first-child{
+        //  border-left:1px solid $border;
+        //}
+      }
+      .nav-item:hover .nav-link{
+        color: $topbar-link-hover-color;
+      }
+    }
+  }
+}
+
+.fixed-header {
+  .h12-topbar {
+    display: none;
+  }
+}
+
+.topbar {
+  .slogan {
+    color: $topbar-link-color;
+  }
+  .language {
+    > a {
+      color: $topbar-link-color;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+    .dropdown-menu {
+      background-color: $topbar-lang-bg-color;
+      a {
+        color: $topbar-lang-link-color;
+      }
+      -webkit-box-shadow: $topbar-lang-box-shadow;
+      -moz-box-shadow: $topbar-lang-box-shadow;
+      box-shadow: $topbar-lang-box-shadow;
+      border: $topbar-lang-border;
+      .dropdown-item:focus, .dropdown-item:hover {
+        color: $topbar-lang-link-hover-color;
+        text-decoration: none;
+        background-color: $topbar-lang-link-hover-bg-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+
+/*******************
+Header 7
+*******************/
+.header7{
+  background: $inverse;
+  max-height:120px;
+  .h7-topbar{
+    padding: 15px 0;
+    color:$white;
+  }
+  .con-btn{
+    a{
+      padding: 5px 20px;
+      text-transform: uppercase;
+    }
+  }
+  .h7-nav-bar{
+    background: $white;
+    display: flex;
+    box-shadow: $card-shadow;
+    .logo-box{
+      padding: 20px;
+      flex-shrink: 0;
+      width: 230px;
+      border-right:1px solid $border;
+    }
+    .h7-nav-box{
+      display: block;
+      width: calc(100% - 230px);
+      .h7-mini-bar{
+        border-bottom: 1px solid $border;
+        .gen-info{
+          span{
+            display: inline-block;
+            padding: 15px 20px;
+            font-weight: 400;
+          }
+        }
+        .social-info{
+          padding-right: 10px;
+          a{
+            display: inline-block;
+            padding: 15px 8px;
+            font-weight: 400;
+            color:$muted;
+            &:hover{
+              color:$dark;
+            }
+          }
+        }
+      }
+      .main-nav{
+        ul{
+          margin:0;
+          padding:0;
+          font-size: 13px;
+          font-weight: 500;
+          text-transform: uppercase;
+          li{
+            list-style: none;
+            margin:0;
+            padding:0;
+            position: relative;
+            a{
+              padding: 20px0 21px;
+              color:$muted;
+              display: block;
+            }
+          }
+        }
+        >ul{
+          display: table;
+          width: 100%;
+          >li{
+            display: table-cell;
+            text-align: center;
+            border-left: 1px solid $border;
+            &:first-child{
+              border-left:0;
+            }
+            &:hover{
+              background: $light;
+              > ul{
+                display: block;
+              }
+            }
+            ul{
+              position: absolute;
+              display: none;
+              background: $light;
+              text-align: left;
+              padding: 18px;
+              width: 250px;
+              li a{
+                padding: 13px 10px;
+                transition: 0.2s ease-in;
+                &:hover{
+                  padding: 13px 10px 13px 18px;
+                  color:$dark;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:767px) {
+  .header7 .h7-nav-bar{
+    display: block;
+    .logo-box{
+      display: inline-block;
+    }
+    .h7-nav-box{
+      display: none;
+      width: 100%;
+      &.show{
+        display: block;
+      }
+      .h7-mini-bar{
+        border-top:1px solid $border;
+      }
+
+      .main-nav{
+        max-height: 200px;
+        overflow: auto;
+        >ul{
+          display: block;
+          >li{
+            display: block;
+            text-align: left;
+            a{
+              padding: 20px;
+            }
+            ul{
+              position: relative;
+              width: 100%;
+              padding-top:0;
+            }
+          }
+        }
+      }
+
+    }
+    .op-clo{
+      padding: 20px 22px;
+      float: right;
+      margin: 25px 30px 0 0;
+    }
+  }
+}

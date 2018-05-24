@@ -1,0 +1,72 @@
+
+/*******************
+Header 4
+*******************/
+
+.h4-topbar {
+  @include linear-gradient (to right, $success 0%, $success-dark 100%);
+  .navbar{
+    padding: 0;
+    .hidden-lg-up{
+      padding:15px;
+      color:$white;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    .navbar-nav{
+      .nav-link{
+        padding:15px;
+        color:$white;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .nav-item:hover .nav-link, .nav-item.active .nav-link{
+        background: $white;
+        color:$dark;
+      }
+      .search {
+        .nav-link{
+          background: $dark-transparent;
+          padding: 15px 23px;
+
+        }
+        .dropdown-menu{
+          padding: 20px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+.h4-nav-bar{
+  padding: 15px0;
+  .donate-btn{
+    a{
+      font-size:13px;
+      font-weight: 500;
+      padding: 13px 25px;
+      margin-left: 15px;
+    }
+  }
+  .nav-item .nav-link{
+    display: flex;
+    padding: 0 25px;
+  }
+}
+
+@media(max-width:1023px) {
+  .h4-nav-bar{
+    .donate-btn{
+      a{
+        display: block;
+        margin-left:0;
+      }
+    }
+    .nav-item .nav-link{
+      padding: 0 10px;
+      margin: 10px 0;
+    }
+  }
+}

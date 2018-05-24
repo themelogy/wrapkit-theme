@@ -1,0 +1,50 @@
+/*******************
+Header 13
+*******************/
+.header13{
+  .h13-nav{
+    padding: 15px 0;
+    .call-info{
+      padding-left: 20px;
+      border-left: 1px solid $border;
+    }
+    .navbar-nav .nav-item {
+      .nav-link {
+        color:$muted;
+        padding: 10px 15px;
+        display: block;
+      }
+      &:hover .nav-link, &.active .nav-link{
+        color:$danger;
+      }
+      &:last-child{
+        margin-left: 10px;
+      }
+    }
+  }
+  .h13-topbar{
+    border-bottom: 1px solid $border;
+    .navbar-brand{
+      font-size: 14px;
+      color:$info;
+      padding: 15px 0;
+    }
+    .navbar{
+      padding: 0;
+      .search-box{
+        padding: 15px;
+        width: 240px;
+      }
+      .nav-item .nav-link{
+        color:$muted;
+        padding: 15px 20px;
+        &:first-child{
+          padding-left:0;
+        }
+      }
+      .nav-item:hover .nav-link{
+        color:$danger;
+      }
+    }
+  }
+}

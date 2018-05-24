@@ -1,0 +1,47 @@
+
+
+/*******************
+Header 12
+*******************/
+.header12{
+  background: $dark;
+
+  .h12-nav{
+    padding: 15px 0;
+    .navbar-nav .nav-item {
+      .nav-link {
+        color:$muted;
+        padding: 10px 15px;
+        display: block;
+      }
+      &:hover .nav-link, &.active .nav-link{
+        color:$white;
+      }
+      &:last-child{
+        margin-left: 10px;
+      }
+    }
+  }
+  .h12-topbar{
+    border-bottom: 1px solid $border;
+    .navbar-brand{
+      font-size: 14px;
+      color:$white;
+      padding: 15px 0;
+    }
+    .navbar{
+      padding: 0;
+      .nav-item .nav-link{
+        color:$muted;
+        padding: 15px 20px;
+        border-right:1px solid $border;
+        &:first-child{
+          border-left:1px solid $border;
+        }
+      }
+      .nav-item:hover .nav-link{
+        color:$white;
+      }
+    }
+  }
+}
