@@ -30,6 +30,10 @@
     "font-rentalcar": "*",
     "aos": "^2.2.0",
     "fontIconPicker": "^2.0.0",
-    "lightbox2": "^2.10.0"
+    "lightbox2": "^2.10.0",
+    "vue": "^2.5.16",
+    "axios": "^0.18.0",
+    "pnotify": "^3.2.1",
+    "gasparesganga-jquery-loading-overlay": "^2.1.3"
   }
 }

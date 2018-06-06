@@ -85,7 +85,10 @@ let vendorCopy = {
         resource.extVendor+'/revolution/**',
         resource.vendor+'/fontIconPicker/**',
         resource.vendor+'/lightbox2/dist/**',
-        resource.vendor+'/font-awesome/web-fonts-with-css/webfonts/**'
+        resource.vendor+'/font-awesome/web-fonts-with-css/webfonts/**',
+        resource.vendor+'/vue/dist/**',
+        resource.vendor+'/axios/dist/**',
+        resource.vendor+'/gasparesganga-jquery-loading-overlay/dist/**',
     ],
     dest: [
         resource.asset.vendor+'/owl.carousel',
@@ -103,7 +106,10 @@ let vendorCopy = {
         resource.asset.vendor+'/revolution',
         resource.asset.vendor+'/fonticonpicker',
         resource.asset.vendor+'/lightbox2',
-        resource.asset.fonts+'/fontawesome'
+        resource.asset.fonts+'/fontawesome',
+        resource.asset.vendor+'/vue',
+        resource.asset.vendor+'/axios',
+        resource.asset.vendor+'/loading-overlay',
     ]
 };
 

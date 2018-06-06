@@ -37,7 +37,7 @@
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/jquery.fonticonpicker.min.js') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/css/jquery.fonticonpicker.min.css') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/themes/bootstrap-theme/jquery.fonticonpicker.bootstrap.css') !!}
-    {!! Asset::add('themes/wrapkit/icons/iconmind/iconmind.css') !!}
+    {!! Asset::add('themes/wrapkit/fonts/iconmind/iconmind.css') !!}
     {!! Asset::css() !!}
     {!! Asset::js() !!}
     <script>

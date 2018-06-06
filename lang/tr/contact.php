@@ -10,5 +10,8 @@ return [
     'fax'        => 'Faks',
     'form'       => [
         'title' => 'İletişim Formu'
+    ],
+    'messages' => [
+        'success' => 'Mesajınız için teşekkür ederiz. İncelenerek tarafınıza en kısa zamanda geri dönüş yapılacaktır.'
     ]
 ];

@@ -14,12 +14,19 @@
                             @location('genel-mudurluk', 'footer')
                         </div>
                         <div class="col-md-6">
-
+                            @include('contact::form')
                         </div>
                     </div>
                 </div>
                 <hr class="my-5"/>
                 @locations('locations', 20, 1)
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            @locations('map', 20)
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
