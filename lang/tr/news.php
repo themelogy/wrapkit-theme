@@ -10,5 +10,9 @@ return [
     'category'      => [
         'title' => 'Kategori'
     ],
-    'announcement'  => 'Duyurular'
+    'announcement'  => 'Duyurular',
+    'messages' => [
+        'post not found'          => 'Yazı bulunamadı',
+        'category post not found' => ':category kategorisinde yazı bulunamadı.'
+    ]
 ];

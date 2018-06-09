@@ -1,8 +1,8 @@
 @extends('news::layouts.master')
 
 @section('news.title')
-    @component('partials.components.title', ['breadcrumbs'=>'news'])
-        <h1 class="title">{{ trans('themes::news.title') }}</h1>
+    @component('partials.components.title', ['breadcrumbs'=>'news.tag'])
+        <h1 class="title">{{ trans('news::tag.title.tag', ['tag'=>$tag->name]) }}</h1>
     @endcomponent
 @endsection
 

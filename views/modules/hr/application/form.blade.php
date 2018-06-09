@@ -4,29 +4,21 @@
 
     <div id="main-wrapper">
         <div class="page-wrapper">
-            <div class="page-title">
-                <div class="container">
-                    <h1>İnsan Kaynakları</h1>
-                </div>
-            </div>
-            <div class="breadcrumbs">
-                <div class="container">
-                    {!! Breadcrumbs::renderIfExists('hr.application.form') !!}
-                </div>
-            </div>
+            @component('partials.components.title', ['breadcrumbs'=>'hr.application.form'])
+                <h1 class="title">{{ trans('themes::hr.title.hr') }}</h1>
+            @endcomponent
             <div class="content-wrapper">
                 <div class="section-padding md-p-top-bot-50 section-page" id="app">
                     <div class="container">
                         {!! Form::open(['v-on:submit'=>'submitForm', 'files'=>true, 'method'=>'post']) !!}
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="title h-line">{{ trans('themes::hr.title.hr') }}</h1>
                                 <!-- Kişisel Bilgiler -->
                                 <div class="row">
                                     <div class="col-md-12">
                                         <fieldset>
                                             <legend><h2>{{ trans('hr::applications.legend.personal') }}</h2></legend>
-                                            <div class="row">
+                                            <div class="form-group row">
                                                 <div class="col-md-2">
                                                     <div class="form-group">
                                                         <label>{{ trans('hr::applications.form.gender') }}</label>
@@ -733,7 +725,7 @@
                                                         <div class="form-group">
                                                             <a class="btn-floating"
                                                                v-on:click="addRow(key, 'reference')" v-if="application.reference.length < 5"><i class="fa fa-plus"></i></a>
-                                                            <a class="btn-floating"
+                                                            <a class="btn-floating btn btn-default"
                                                                v-on:click="removeRow(key, 'reference')" v-if="key > 0"><i class="fa fa-minus"></i></a>
                                                         </div>
                                                     </div>
@@ -861,7 +853,7 @@
                                 <hr/>
                                 <div class="row">
                                     <div class="col-md-12 m-top-20">
-                                        {!! Form::submit(trans('hr::applications.buttons.create'), ['class'=>'btn btn-default btn btn-primary btn-bordered', 'v-bind:value'=>'button']) !!}
+                                        {!! Form::submit(trans('hr::applications.buttons.create'), ['class'=>'btn btn-default btn-themecolor', 'v-bind:value'=>'button']) !!}
                                     </div>
                                 </div>
                             </div>
@@ -1143,6 +1135,7 @@
         width: 30px;
         height: 30px;
         line-height: 30px;
+        cursor: pointer;
     }
 
     .btn-floating i {

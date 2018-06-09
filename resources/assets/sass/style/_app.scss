@@ -15,6 +15,14 @@ Global Styles
 
 * {
     outline: none;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeSpeed;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
 
 body {
@@ -24,12 +32,16 @@ body {
     overflow-x: hidden;
     color: $bodytext;
     font-weight: 300;
+    letter-spacing: -0.005em
 }
 
 html {
     position: relative;
     min-height: 100%;
     background: $white;
+}
+a {
+    @include transition(all .5s);
 }
 
 a:hover,

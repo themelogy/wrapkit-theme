@@ -1,6 +1,6 @@
 <div id="contact_form" class="m-t-md-30">
-    <h3 class="text-themecolor">İletişim Formu</h3>
-    <p class="fs-sm-08">Aşağıda belirtilen harita ve adres bilgilerimizden veya mesaj formunu doldurarak bize ulaşabilirsiniz.</p>
+    <h3 class="text-themecolor">{{ trans('themes::contact.form.title') }}</h3>
+    <p class="fs-sm-08">{{ trans('themes::contact.messages.info') }}</p>
 
     <div class="alert alert-success" role="alert" v-show="success">
         @{{ successMessage }}
@@ -12,13 +12,13 @@
     <div class="form-row">
         <div class="col">
             <div class="form-group">
-                <input type="text" name="first_name" value="" placeholder="Adınız" class="form-control form-control-sm" v-model="input.first_name" :class="{ 'is-invalid' : hasError('first_name') }" />
+                <input type="text" name="first_name" value="" placeholder="{{ trans('contact::contacts.form.first_name') }}" class="form-control form-control-sm" v-model="input.first_name" :class="{ 'is-invalid' : hasError('first_name') }" />
                 <div v-for="error in errors.first_name" class="invalid-feedback">@{{ error }}</div>
             </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <input type="text" name="last_name" value="" placeholder="Soyadınız" class="form-control form-control-sm" v-model="input.last_name" :class="{ 'is-invalid' : hasError('last_name') }"/>
+                <input type="text" name="last_name" value="" placeholder="{{ trans('contact::contacts.form.last_name') }}" class="form-control form-control-sm" v-model="input.last_name" :class="{ 'is-invalid' : hasError('last_name') }"/>
                 <div v-for="error in errors.last_name" class="invalid-feedback">@{{ error }}</div>
             </div>
         </div>
@@ -27,13 +27,13 @@
     <div class="form-row">
         <div class="col">
             <div class="form-group">
-                <input type="text" name="phone" value="" placeholder="Telefon" class="form-control form-control-sm" v-model="input.phone" :class="{ 'is-invalid' : hasError('phone') }"/>
+                <input type="text" name="phone" value="" placeholder="{{ trans('contact::contacts.form.phone') }}" class="form-control form-control-sm" v-model="input.phone" :class="{ 'is-invalid' : hasError('phone') }"/>
                 <div v-for="error in errors.phone" class="invalid-feedback">@{{ error }}</div>
             </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <input type="text" name="email" value="" placeholder="E-Posta" class="form-control form-control-sm" v-model="input.email" :class="{ 'is-invalid' : hasError('email') }"/>
+                <input type="text" name="email" value="" placeholder="{{ trans('contact::contacts.form.email') }}" class="form-control form-control-sm" v-model="input.email" :class="{ 'is-invalid' : hasError('email') }"/>
                 <div v-for="error in errors.email" class="invalid-feedback">@{{ error }}</div>
             </div>
         </div>
@@ -42,7 +42,7 @@
     <div class="form-row">
         <div class="col">
             <div class="form-group">
-                <textarea name="enquiry" class="form-control form-control-sm" placeholder="Mesajınız" rows="3" v-model="input.enquiry" :class="{ 'is-invalid' : hasError('enquiry') }"></textarea>
+                <textarea name="enquiry" class="form-control form-control-sm" placeholder="{{ trans('contact::contacts.form.enquiry') }}" rows="3" v-model="input.enquiry" :class="{ 'is-invalid' : hasError('enquiry') }"></textarea>
                 <div v-for="error in errors.enquiry" class="invalid-feedback">@{{ error }}</div>
             </div>
         </div>
@@ -50,7 +50,7 @@
 
     <div class="form-row">
         <div class="col">
-            <button type="submit" class="btn btn-themecolor">Gönder</button>
+            <button type="submit" class="btn btn-themecolor">{{ trans('global.buttons.send') }}</button>
         </div>
         <div class="col">
             {!! Captcha::image('captcha_contact') !!}

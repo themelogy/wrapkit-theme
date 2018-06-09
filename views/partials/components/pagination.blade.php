@@ -1,10 +1,15 @@
 @if ($paginator->hasPages())
     <nav class="clearfix">
-        <ul class="pagination">
+        <ul class="pagination pagination-sm">
             @if ($paginator->onFirstPage())
                 <li class="page-item disabled hide">&laquo;</li>
             @else
-                <li class="page-item"><a class="page-link pag-prev" href="{{ $paginator->previousPageUrl() }}" rel="prev"><</a></li>
+                <li class="page-item">
+                    <a class="page-link pag-prev" href="{{ $paginator->previousPageUrl() }}" rel="prev">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">{{ trans('global.buttons.prev') }}</span>
+                    </a>
+                </li>
             @endif
 
             @foreach ($elements as $element)

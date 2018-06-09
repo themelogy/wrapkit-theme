@@ -325,3 +325,122 @@
     @include transition(all .5s);
   }
 }
+
+
+.widget {
+  border: 1px solid $border;
+  border-radius: 3px;
+  padding: 20px;
+  > h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 15px;
+    &:after {
+      background: $themecolor;
+      content: "";
+      display: block;
+      height: 2px;
+      margin-top: 9px;
+      width: 60px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    h3 {
+      font-size: 0.9em;
+      line-height: 1rem;
+    }
+  }
+  a {
+    color: $muted;
+    @include transition(all .5s);
+    &:hover, &:active {
+      color: $themecolor;
+    }
+  }
+  &.widget-category {
+    a {
+      font-size: 0.9em;
+    }
+  }
+  &.widget-latest {
+    li {
+      h3 {
+        font-size: 0.8em;
+      }
+      .image {
+        float: left;
+        margin: 0 10px 10px 0;
+        img {
+          min-width: 70px;
+        }
+      }
+      .date {
+        font-size: 0.7em;
+      }
+      display: block;
+      clear: left;
+    }
+  }
+  &.widget-tags {
+    a:hover, a:active {
+      background-color: $themecolor;
+      color: $white;
+    }
+  }
+}
+
+.content-news {
+  article {
+    h3 {
+      font-size: 1.25rem;
+      a {
+        color: $dark;
+        &:hover, &:active, &:focus {
+          color: $themecolor;
+        }
+      }
+    }
+    .meta {
+      border-top: 1px solid $border;
+      border-bottom: 1px solid $border;
+      margin: 10px 0;
+      ul {
+        padding: 3px 0;
+        margin: 0;
+        li:first-child {
+          padding-left: 0;
+        }
+        li:last-child {
+          border-right: none;
+        }
+        li {
+          border-right: 1px solid $border;
+          padding: 0 15px;
+          font-size: 0.8em;
+          i {
+            margin-right: 5px;
+            color: $themecolor;
+          }
+        }
+      }
+    }
+    .content {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.page-item {
+  &.active .page-link {
+    background-color: $themecolor;
+    border-color: $themecolor;
+  }
+  .page-link {
+    color: $themecolor;
+  }
+}
