@@ -19,11 +19,11 @@ $danger                                   : #ff4d7e;
 $success                                  : #2cdd9b;
 $warning                                  : #fec500;
 $primary                                  : #316ce8;
-$info                                     : #188ef4;
+$info                                     : $themecolor; //#188ef4
 $inverse                                  : #3e4555;
 $muted                                    : #8d97ad;
 $dark                                     : #263238;
-$light                                    : #f5f7fa;
+$light                                    : darken(white, 3%);
 $extra-light                              : #ebf3f5;
 $secondary                                : #727b84;
 $facebook                                 : #3b5a9a;

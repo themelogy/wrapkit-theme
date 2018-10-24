@@ -23,8 +23,8 @@
                 <!-- Column -->
                 <div class="col-lg-3 col-md-6">
                     <a href="#"><img src="{{ Theme::url('images/logo/netgd.svg') }}" height="60" alt="{{ setting('theme::company-name') }}" /></a>
-                    <p class="m-t-20">
-                        Hızlı ve güvenilir bir şekilde gayrimenkul değerleme (ekspertiz) hizmeti veren şirketimiz, geçmişten gelen bilgi birikimi, tecrübeli kadrosu, ekspertiz süreci ve raporlamadaki titizliği ile gayrimenkul değerleme firmaları arasında potansiyelini hızla yükseltmektedir.
+                    <p class="m-t-20" style="text-align: justify; font-size: .95em;">
+                        {!! strip_tags(Block::get('footer-intro')) !!}
                     </p>
                 </div>
                 <!-- Column -->

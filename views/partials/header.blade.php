@@ -17,7 +17,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right animated fadeInDown">
                                 @foreach(LaravelLocalization::getSupportedLocales() as $locale => $supportedLocale)
-                                <a class="dropdown-item font-12" hreflang="{!! $locale !!}" href="{{ url($locale) }}"><span class="flag-icon flag-icon-{{ $locale == "en" ? "us" : $locale }}"></span> {{ $supportedLocale['native'] }}</a>
+                                <a class="dropdown-item font-12" hreflang="{!! $locale !!}" href="{{ url($locale) }}"><span class="flag-icon flag-icon-{{ $locale == "en" ? "gb" : $locale }}"></span> {{ $supportedLocale['native'] }}</a>
                                 @endforeach
                             </div>
                         </div>

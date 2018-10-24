@@ -12,7 +12,8 @@ class HomeMenuLinksPresenter extends Presenter
     {
         return PHP_EOL.'<div class="feature24">
     <div class="container">
-        <div class="row wrap-feature-24">'.PHP_EOL;
+        <div class="wrap-feature-24">
+        <div class="row">'.PHP_EOL;
     }
 
     /**
@@ -21,6 +22,7 @@ class HomeMenuLinksPresenter extends Presenter
     public function getCloseTagWrapper()
     {
         return PHP_EOL.'        </div>
+        </div>
     </div>
 </div>>'.PHP_EOL;
     }

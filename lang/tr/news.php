@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'         => 'Haberler',
+    'title'         => 'Haber ve Duyurular',
     'description'   => 'Tüp bebek bilgi bankası',
     'author posts'  => ':author yazıları',
     'recent posts'  => 'Son Haberler',

@@ -89,6 +89,7 @@ let vendorCopy = {
         resource.vendor+'/vue/dist/**',
         resource.vendor+'/axios/dist/**',
         resource.vendor+'/gasparesganga-jquery-loading-overlay/dist/**',
+        resource.extVendor+'/orgchart/dist/**'
     ],
     dest: [
         resource.asset.vendor+'/owl.carousel',
@@ -110,6 +111,7 @@ let vendorCopy = {
         resource.asset.vendor+'/vue',
         resource.asset.vendor+'/axios',
         resource.asset.vendor+'/loading-overlay',
+        resource.asset.vendor+'/orgchart'
     ]
 };
 
@@ -212,7 +214,7 @@ gulp.task('production', ['clear-public'], function(){
 });
 
 // Configure the proxy server for livereload
-var proxyServer = "http://dev.netgd.com";
+var proxyServer = "http://dev.netgd.com.tr";
 
 var arrAddFiles = [
     'views/**/*.php'

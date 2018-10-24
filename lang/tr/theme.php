@@ -5,6 +5,6 @@ return [
       'slogan' => 'Gerçek Değer <strong>NET</strong>\'dir'
   ],
   'footer' => [
-      'copyrights' => ':date © :company Tüm hakları saklıdır.'
+      'copyrights' => ':company © :date Tüm hakları saklıdır.'
   ]
 ];

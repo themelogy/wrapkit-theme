@@ -20,16 +20,126 @@
              ];
 
              var map = new google.maps.Map(document.getElementById('map'),{
-                 zoom: 6
+                 zoom: 6,
+                 styles: [
+                     {
+                         "elementType": "geometry",
+                         "stylers": [
+                             {
+                                 "color": "#f5f5f5"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "administrative.province",
+                         "elementType": "geometry.stroke",
+                         "stylers": [
+                             {
+                                 "color": "#00ae65"
+                             },
+                             {
+                                 "visibility": "on"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "road",
+                         "elementType": "geometry",
+                         "stylers": [
+                             {
+                                 "color": "#ffffff"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "road.arterial",
+                         "elementType": "labels.text.fill",
+                         "stylers": [
+                             {
+                                 "color": "#757575"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "road.highway",
+                         "elementType": "geometry",
+                         "stylers": [
+                             {
+                                 "color": "#dadada"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "road.highway",
+                         "elementType": "labels.text.fill",
+                         "stylers": [
+                             {
+                                 "color": "#616161"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "road.local",
+                         "elementType": "labels.text.fill",
+                         "stylers": [
+                             {
+                                 "color": "#9e9e9e"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "transit.line",
+                         "elementType": "geometry",
+                         "stylers": [
+                             {
+                                 "color": "#e5e5e5"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "transit.station",
+                         "elementType": "geometry",
+                         "stylers": [
+                             {
+                                 "color": "#eeeeee"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "water",
+                         "elementType": "geometry",
+                         "stylers": [
+                             {
+                                 "color": "#c9c9c9"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "water",
+                         "elementType": "labels.text.fill",
+                         "stylers": [
+                             {
+                                 "color": "#9e9e9e"
+                             }
+                         ]
+                     },
+                     {
+                         "featureType": "administrative.country",
+                         "elementType": "geometry.stroke",
+                         "stylers": [
+                             {
+                                 "color": "#8b8d8e"
+                             }
+                         ]
+                     }
+                 ]
              });
              map.setCenter(new google.maps.LatLng(
                  ((lat_max + lat_min) / 2.0),
                  ((lng_max + lng_min) / 2.0)
              ));
             map.fitBounds(new google.maps.LatLngBounds(
-                //bottom left
                 new google.maps.LatLng(lat_min, lng_min),
-                //top right
                 new google.maps.LatLng(lat_max, lng_max)
             ));
 

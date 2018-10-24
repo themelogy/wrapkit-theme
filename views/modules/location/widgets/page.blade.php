@@ -5,14 +5,14 @@
         @endforeach
     </ul>
     <!-- Tab panes -->
-    <div class="tab-content py-0">
+    <div class="tab-content py-0" style="width: 100%;">
         @foreach($locations as $location)
             <div class="tab-pane {{ $loop->first ? 'active' : '' }}" id="{{ $location->slug }}" role="tabpanel">
                 <div class="px-20">
                     <div class="d-flex no-block">
                         <div class="m-t-5 m-r-20 align-self-top"><i class="icon-Location-2"></i></div>
                         <div class="info">
-                            <p>{!! $location->present()->address !!}</p>
+                            <p>{!! $location->address !!}<br/>{{ $location->city->name }} / {{ $location->country->name }}</p>
                         </div>
                     </div>
                     @if($location->phone1)

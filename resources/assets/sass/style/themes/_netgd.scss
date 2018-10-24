@@ -84,12 +84,15 @@
 .feature24 {
   margin-top: -100px;
   .wrap-feature-24 {
-    background-color: white;
+    background-color: $white;
     position: relative;
     z-index: 5;
-    padding-top: 20px;
+    padding: 30px 30px 0 30px;
+    border: 1px solid darken($white, 5%);
+    @include border-radius(20px);
     .card {
       @include transition(all 1s);
+      @include border-radius(10px);
       &:hover{
         transform: scale(0.95, 0.95);
         -webkit-transform: scale(0.95, 0.95);
@@ -99,9 +102,11 @@
       content: " ";
       position: absolute;
       top:0;
+      left:0;
       width: 100%;
       height: 100px;
       @include box-shadow(0,-20px,50px,rgba(0,0,0,.10));
+      @include border-radius(20px);
     }
   }
 }
@@ -442,5 +447,97 @@
   }
   .page-link {
     color: $themecolor;
+  }
+}
+
+.blog-home1 {
+  .card {
+    img {
+      @include border-radius(20px 20px 0 0);
+    }
+    @include border-radius(20px);
+  }
+}
+
+.orgchart {
+  background: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: -20px 0 0 0 !important;
+  table {
+    margin: 0 !important;
+  }
+  .node {
+    width: 100% !important;
+  }
+  .edge {
+    color: $themecolor-alt !important;
+  }
+  .title {
+    margin: 0 !important;
+    height: auto !important;
+    padding: 5px 10px !important;
+    @include border-radius(10px !important);
+    white-space: normal !important;
+  }
+  .node .title, .downLine {
+    background-color: $themecolor !important;
+  }
+  .lines {
+    .rightLine, .leftLine, .topLine {
+      border-color: $themecolor !important;
+    }
+  }
+}
+#ul-data {
+  display: none;
+}
+
+.brand {
+  &.card {
+    border: 1px solid darken(white, 5%);
+    text-align: center;
+    padding: 20px 10px 0 10px;
+    //@include border-radius(10px);
+    .card-body {
+      padding: 10px 0 0 0;
+      margin: 10px 0 0 0;
+      h3,h4,h5 {
+        border-top: 1px solid darken(white, 5%);
+        color: $gray-500;
+        padding-top: 5px;
+        font-size: .9em;
+      }
+    }
+    @include transition(all 1s ease-in-out);
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      height: 50px;
+      padding: 5px;
+    }
+  }
+}
+
+.accordion {
+  .card-body {
+    border-left: 1px solid darken(white, 5%) !important;
+    border-right: 1px solid darken(white, 5%) !important;
+    &:last-child {
+      border-bottom: 1px solid darken(white, 5%) !important;
+    }
+  }
+  .card-header {
+    &:hover {
+      background-color: transparent !important;
+      border-color: darken(white, 5%) !important;
+      a {
+        color: $themecolor !important;
+      }
+    }
+    a[aria-expanded="true"] {
+      color: $themecolor !important;
+    }
   }
 }

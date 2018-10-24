@@ -7,7 +7,7 @@
         <div class="meta">
             <ul class="list-inline">
                 <li class="date"><i class="far fa-calendar-alt"></i> {{ $post->created_at->formatLocalized('%d %B %Y') }}</li>
-                <li class="category"><a href="#"><i class="far fa-newspaper m-r-5"></i> {{ $post->category->name }}</a></li>
+                <li class="category"><a href="{{ route('news.category', $post->category->slug) }}"><i class="far fa-newspaper m-r-5"></i> {{ $post->category->name }}</a></li>
             </ul>
         </div>
         <div class="content">

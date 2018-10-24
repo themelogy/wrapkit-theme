@@ -1,14 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
-    @component('partials.components.page-title', ['breadcrumb'=>'hr.position.index'])
-    {{ trans_choice('hr::positions.title.positions',1) }}
-    @endcomponent
-
-    <section class="section-padding md-p-top-bot-50 section-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+    <div id="main-wrapper">
+        <div class="page-wrapper">
+            @component('partials.components.title', ['breadcrumbs'=>'hr.position.index'])
+                <h1 class="title">    {{ trans_choice('hr::positions.title.positions',1) }}</h1>
+            @endcomponent
+            <div class="container">
+                <div class="content-wrapper">
+                    @if($positions->count()>0)
                     <table class="table table-striped">
                         <thead>
                         <tr>
@@ -22,19 +22,23 @@
                         </thead>
                         <tbody>
                         @foreach($positions as $position)
-                        <tr>
-                            <th scope="row">{{ $loop->iteration }}</th>
-                            <td>{{ $position->reference_no }}</td>
-                            <td>{{ $position->name }}</td>
-                            <td>{{ $position->personal_number }}</td>
-                            <td>{{ $position->present()->position('city') }}</td>
-                            <td><a class="btn btn-primary btn-sm waves-effect waves-light" href="{{ route('hr.position.view', [$position->slug]) }}">İncele</a>  <a class="btn btn-primary btn-sm waves-effect waves-light" href="{{ route('hr.application.form', ['position_id'=>$position->id]) }}">Başvuru Yap</a></td>
-                        </tr>
+                            <tr>
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>{{ $position->reference_no }}</td>
+                                <td>{{ $position->name }}</td>
+                                <td>{{ $position->personal_number }}</td>
+                                <td>{{ $position->present()->position('city') }}</td>
+                                <td><a class="btn btn-primary btn-sm waves-effect waves-light" href="{{ route('hr.position.view', [$position->slug]) }}">İncele</a>  <a class="btn btn-primary btn-sm waves-effect waves-light" href="{{ route('hr.application.form', ['position_id'=>$position->id]) }}">Başvuru Yap</a></td>
+                            </tr>
                         @endforeach
                         </tbody>
                     </table>
+                    @else
+                        <div class="alert alert-warning">Açık pozisyon bulunamadı.</div>
+                        <a class="btn btn-themecolor" href="{{ LaravelLocalization::getLocalizedURL(locale(), route('hr.application.form')) }}">İş başvuru formu için tıklayınız.</a>
+                    @endif
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 @endsection
