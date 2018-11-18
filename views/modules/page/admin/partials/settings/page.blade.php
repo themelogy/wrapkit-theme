@@ -8,7 +8,7 @@
             {!! Form::normalSelect("settings[show_menu_location]", "Menü Gösterim Alanı", $errors, ['left'=>'Sol', 'right'=>'Sağ'], isset($page->settings->show_menu_location) ? $page->settings->show_menu_location : null) !!}
         </div>
         <div class="col-md-3">
-            {!! Form::normalSelect("settings[full_page]", "Tam Sayfa Göster", $errors, [0=>'Hayır', 1=>'Evet'], isset($page->settings->show_menu) ? $page->settings->show_menu : 0) !!}
+            {!! Form::normalSelect("settings[full_page]", "Tam Sayfa Göster", $errors, [0=>'Hayır', 1=>'Evet'], isset($page->settings->full_page) ? $page->settings->full_page : 0) !!}
         </div>
         <div class="col-md-3">
             {!! Form::normalSelect("settings[show_content]", "İçerik Göster", $errors, [0=>'Hayır', 1=>'Evet'], isset($page->settings->show_content) ? $page->settings->show_content : 0) !!}
@@ -58,6 +58,7 @@
 </div>
 
 @push('js-stack')
+    {!! Asset::setDomain('//') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/jquery.fonticonpicker.min.js') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/css/jquery.fonticonpicker.min.css') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/themes/bootstrap-theme/jquery.fonticonpicker.bootstrap.css') !!}

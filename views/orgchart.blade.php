@@ -9,7 +9,7 @@
             <div class="content-wrapper">
                 @includeWhen($page->parent && @$page->parent->settings->show_menu && !@$page->settings->full_page, 'page::page-with-sidebar', ['page'=>$page])
                 @includeWhen($page && @$page->settings->list_page, 'page::page-list', ['page'=>$page])
-                @includeWhen($page && !@$page->settings->list_page && !@$page->parent->settings->show_menu, 'page::page', ['page'=>$page])
+                @includeWhen($page && !@$page->settings->list_page && @$page->parent->settings->full_page, 'page::page', ['page'=>$page])
             </div>
         </div>
     </div>
@@ -27,7 +27,9 @@
             $(function() {
                 var oc = $('#chart-container').orgchart({
                     'data' : $('#ul-data'),
-                    'toggleSiblingsResp': true
+                    'toggleSiblingsResp': true,
+                    'pan': true,
+                    'zoom': true
                 });
             });
         })(jQuery);

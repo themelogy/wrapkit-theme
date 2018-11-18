@@ -34,6 +34,7 @@
 </div>
 
 @push('js-stack')
+    {!! Asset::setDomain('//') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/jquery.fonticonpicker.min.js') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/css/jquery.fonticonpicker.min.css') !!}
     {!! Asset::add('themes/wrapkit/vendor/fonticonpicker/themes/bootstrap-theme/jquery.fonticonpicker.bootstrap.css') !!}

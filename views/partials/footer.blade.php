@@ -33,14 +33,15 @@
                 </div>
 
                 @inject("menuService", "Modules\Menu\Services\MenuService")
+
+                <div class="col-lg-3 col-md-3 col-sm-12 m-t-5">
+                    <h6 class="font-medium c-t-txt">{{ $menuService->title('corporate') }}</h6>
+                    {!! Menu::render('corporate', \Themes\Moderna\Presenter\FooterMenuLinksPresenter::class) !!}
+                </div>
+                
                 <div class="col-lg-3 col-md-3 col-sm-12 m-t-5">
                     <h6 class="font-medium c-t-txt">{{ $menuService->title('our-services') }}</h6>
                     {!! Menu::render('our-services', \Themes\Moderna\Presenter\FooterMenuLinksPresenter::class) !!}
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-12 m-t-5">
-                    <h6 class="font-medium c-t-txt">{{ $menuService->title('work-areas') }}</h6>
-                    {!! Menu::render('work-areas', \Themes\Moderna\Presenter\FooterMenuLinksPresenter::class) !!}
                 </div>
 
             </div>

@@ -27,6 +27,11 @@
 
 {!! Theme::style('vendor/bootstrap-select/css/bootstrap-select.min.css') !!}
 {!! Theme::script('vendor/bootstrap-select/js/bootstrap-select.min.js') !!}
+<style>
+.fbTopBar {
+	display: none !important;
+}
+</style>
 <script>
     $(document).ready(function () {
         if(typeof $.fn.selectpicker !== 'undefined') {
