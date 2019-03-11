@@ -39,3 +39,5 @@
         }
     });
 </script>
+
+{!! setting('core::analytics-script') !!}

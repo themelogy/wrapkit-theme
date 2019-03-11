@@ -8,6 +8,12 @@
             @endcomponent
             <div class="container">
                 <div class="content-wrapper">
+                    @if($page = Page::findBySlug('kariyer'))
+                        {!! $page->body !!}
+                    @endif
+
+                        <hr/>
+
                     @if($positions->count()>0)
                     <table class="table table-striped">
                         <thead>

@@ -6,7 +6,7 @@
             @else
                 <li class="page-item">
                     <a class="page-link pag-prev" href="{{ $paginator->previousPageUrl() }}" rel="prev">
-                        <span aria-hidden="true">&laquo;</span>
+                        <span aria-hidden="true"><</span>
                         <span class="sr-only">{{ trans('global.buttons.prev') }}</span>
                     </a>
                 </li>

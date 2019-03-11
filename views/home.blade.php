@@ -14,7 +14,7 @@
 
                 {!! Menu::render('home', \Themes\Moderna\Presenter\HomeMenuLinksPresenter::class) !!}
 
-                @newsLatestPosts(10, 'home-latest')
+                @newsLatestPosts(3, 'home-latest')
 
                 @portfolioBrands(20)
             </div>
