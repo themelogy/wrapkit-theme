@@ -16,7 +16,7 @@
         <td>{{ $employee->full_name }}</td>
         <td>{{ $employee->license_date->format('d.m.Y') ?? '' }}</td>
         <td>{{ $employee->settings->license_no ?? '' }}</td>
-        <td>{{ trans('themes::employee.table.year', ['year' => $employee->license_year]) ?? '' }}</td>
+        <td>{{ trans('themes::employee.table.year', ['year' => $employee->experience]) ?? '' }}</td>
         <td>{{ $employee->position }}</td>
       </tr>
       @endforeach

@@ -33,20 +33,6 @@
             </div>
             <div class="box">
                 <div class="box-body">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            {!! Form::label("settings.share_amount", "Pay Tutarı".':') !!}
-                            {!! Form::input('text', 'settings[share_amount]', $employee->settings->share_amount ?? '', ['class'=>'form-control']) !!}
-                            {!! $errors->first("settings.share_amount", '<span class="help-block">:message</span>') !!}
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            {!! Form::label("settings.share_percent", "Pay Oranı".':') !!}
-                            {!! Form::input('text', 'settings[share_percent]', $employee->settings->share_percent ?? '', ['class'=>'form-control']) !!}
-                            {!! $errors->first("settings.share_percent", '<span class="help-block">:message</span>') !!}
-                        </div>
-                    </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             {!! Form::label("settings.license_no", "Lisans Belge No".':') !!}
@@ -64,65 +50,24 @@
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
                                 </div>
-                                {!! $errors->first("created_at", '<span class="help-block">:message</span>') !!}
+                                {!! $errors->first("license_date", '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        {!! Form::label("settings.license_year", "Lisans Yılı".':') !!}
-                        {!! Form::input('text', 'settings[license_year]', $employee->settings->license_year ?? '', ['class'=>'form-control']) !!}
-                        {!! $errors->first("settings.license_year", '<span class="help-block">:message</span>') !!}
+                        <div class="form-group">
+                            <div class="form-group">
+                                {!! Form::label("settings[experience_year]", "İç Tescrübesi Başlangıç Yılı") !!}
+                                <div class='input-group date' id='experience_year'>
+                                    <input type='text' class="form-control" name="settings[experience_year]" value="{{ old('settings.experience_year') }}" />
+                                    <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                                </div>
+                                {!! $errors->first("experience_year", '<span class="help-block">:message</span>') !!}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-body">
-                    <fieldset>
-                        <legend>{{ trans('employee::employees.title.contact info') }}</legend>
-                        <div class="row">
-                            <div class="col-md-6">
-                                {!! Form::normalInput('email', trans('employee::employees.form.email'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('phone', trans('employee::employees.form.phone'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('mobile', trans('employee::employees.form.mobile'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('fax', trans('employee::employees.form.fax'), $errors) !!}
-                            </div>
-                        </div>
-
-                        {!! Form::textarea('address', null, ['class'=>'form-control textarea']) !!}
-                    </fieldset>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-body">
-                    <fieldset>
-                        <legend>{{ trans('employee::employees.title.social media') }}</legend>
-                        <div class="row">
-                            <div class="col-md-6">
-                                {!! Form::normalInput('facebook', trans('employee::employees.form.facebook'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('instagram', trans('employee::employees.form.instagram'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('twitter', trans('employee::employees.form.twitter'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('google', trans('employee::employees.form.google'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('linkedin', trans('employee::employees.form.linkedin'), $errors) !!}
-                            </div>
-                            <div class="col-md-6">
-                                {!! Form::normalInput('website', trans('employee::employees.form.website'), $errors) !!}
-                            </div>
-                        </div>
-                    </fieldset>
                 </div>
             </div>
         </div>
@@ -194,6 +139,12 @@
             locale: '<?= App::getLocale() ?>',
             allowInputToggle: true,
             format: 'DD.MM.YYYY'
+        });
+        $('#experience_year').datetimepicker({
+            locale: '<?= App::getLocale() ?>',
+            allowInputToggle: true,
+            format: 'YYYY',
+            viewMode: "years"
         });
     </script>
 @endpush
