@@ -54,6 +54,10 @@
             {!! Form::checkbox("settings[show_docs]", 1, old('settings.widget_documents', isset($page->settings->show_docs) ? $page->settings->show_docs : 0), ['class'=>'flat-blue']) !!}
             &nbsp; Belgeleri Göster
         </div>
+        <div class="col-md-3">
+            {!! Form::checkbox("settings[widget_employees]", 1, old('settings.widget_employees', isset($page->settings->widget_employees) ? $page->settings->widget_employees : 0), ['class'=>'flat-blue']) !!}
+            &nbsp; Personelleri Göster
+        </div>
     </fieldset>
 </div>
 
