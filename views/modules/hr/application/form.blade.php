@@ -87,7 +87,7 @@
                                 </span>
                                             <button class="btn btn-danger" @click="removeFile" v-show="application.attachment">{{ trans('hr::applications.form.attachment delete') }}</button>
                                             <span class="fileinput-filename" v-show="application.attachment"></span>
-                                            <span class="fileinput-new"> {{ trans('hr::applications.form.attachment not found') }}</span>
+                                            <span class="fileinput-new"> {{ trans('hr::applications.form.attachment not found') }} (İzin verilen dosya türü: PDF)</span>
                                         </div>
                                     </div>
                                 </div>

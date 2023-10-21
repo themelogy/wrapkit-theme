@@ -7,10 +7,10 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ft1" aria-controls="ft1" aria-expanded="false" aria-label="Toggle navigation"> <span class="ti-menu"></span> </button>
                         <div class="collapse navbar-collapse" id="ft1">
                             {!! Menu::render('footer', \Themes\Moderna\Presenter\FooterMenuPresenter::class) !!}
-                            <ul class="navbar-nav ml-auto theme-btn">
+<!--                             <ul class="navbar-nav ml-auto theme-btn">
                                 <li class="nav-item"><a class="btn btn-outline-secondary btn-rounded btn-sm" href="#"><i class="icon-Tap m-r-10 font-bold"></i>Online Ekspertiz</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </nav>
                 </div>
             </div>
@@ -22,7 +22,7 @@
             <div class="row">
                 <!-- Column -->
                 <div class="col-lg-3 col-md-6">
-                    <a href="#"><img src="{{ Theme::url('images/logo/netgd.svg') }}" height="60" alt="{{ setting('theme::company-name') }}" /></a>
+                    <a href="#"><img src="{{ Theme::url('images/logo/net15yil.png') }}" height="60" alt="{{ setting('theme::company-name') }}" /></a>
                     <p class="m-t-20" style="text-align: justify; font-size: .95em;">
                         {!! strip_tags(Block::get('footer-intro')) !!}
                     </p>

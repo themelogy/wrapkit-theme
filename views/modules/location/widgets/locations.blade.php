@@ -37,14 +37,14 @@
                                 </div>
                             </div>
                         @endif
-                        @if($location->email)
+{{--                         @if($location->email)
                             <div class="d-flex no-block">
                                 <div class="font-20 m-t-5 m-r-20 align-self-top"><i class="icon-Mail"></i></div>
                                 <div class="info">
                                     <a href="mailto:{!! Html::email($location->email) !!}" class="font-medium text-themecolor db m-t-5">{!! Html::email($location->email) !!}</a>
                                 </div>
                             </div>
-                        @endif
+                        @endif --}}
                     </div>
                 </div>
             </div>

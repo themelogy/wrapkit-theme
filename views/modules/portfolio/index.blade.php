@@ -8,7 +8,7 @@
             @endcomponent
             <div class="content-wrapper">
                 <div class="container">
-                    @portfolioBrands(20, 'page-brand')
+                    @portfolioBrands(30, 'page-brand')
                 </div>
             </div>
         </div>

@@ -3,12 +3,8 @@
 @section('content')
     <div id="main-wrapper">
         <div class="page-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        @themeSlide('anasayfa')
-                    </div>
-                </div>
+            <div class="container" style="padding: 0;">
+                @themeSlide('anasayfa')
             </div>
             <div class="container-fluid">
 

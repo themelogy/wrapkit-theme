@@ -28,7 +28,7 @@
         <div class="container">
             <!-- Header 12 navabar -->
             <nav class="navbar navbar-default navbar-expand-lg hover-dropdown h12-nav">
-                <a class="navbar-brand" href="{{ LaravelLocalization::getLocalizedURL(locale(), url(locale())) }}"><img src="{!! Theme::url('images/logo/netgd.svg') !!}" alt="{{ setting('theme::company-name') }}" /></a>
+                <a class="navbar-brand" href="{{ LaravelLocalization::getLocalizedURL(locale(), url(locale())) }}"><img src="{!! Theme::url('images/logo/net15yil.png') !!}" alt="{{ setting('theme::company-name') }}" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header12a" aria-controls="header12a" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="ti-menu"></span>
                 </button>

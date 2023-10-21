@@ -1,9 +1,9 @@
 @if($slides->count()>0)
-<div id="rev_slider_4_1_wrapper"
+<div id="rev_slider_4_1_wrapper" 
      class="rev_slider_wrapper fullwidthbanner-container"
      data-alias="classicslider1">
 
-    <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+    <div id="rev_slider_4_1" class="rev_slider" style="display:none;" data-version="5.0.7">
         <ul>
             @foreach($slides as $slide)
             <li data-index="rs-{{ $loop->iteration }}"
@@ -91,9 +91,9 @@
                 revslider_showDoubleJqueryError("#rev_slider_4_1");
             }else{
                 revapi4 = tpj("#rev_slider_4_1").show().revolution({
-                    sliderType:"carousel",
+                    // sliderType:"carousel",
                     jsFileLocation:"vendor/revolution/js/",
-                    sliderLayout:"standard",
+                    sliderLayout:"auto",
                     dottedOverlay:"none",
                     delay:9000,
                     navigation: {
